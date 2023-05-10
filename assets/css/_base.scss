@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+ul{
+    list-style: none;
+    padding:0;
+
+}
+
+a{
+    text-decoration: none;
+    color: #d8c4c4;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 5px 5px 10px #333;
+}
+.btn:active{
+    transform: scale(0.95);
+    transition: 0.5s;
+}

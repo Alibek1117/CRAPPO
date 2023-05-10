@@ -1,0 +1,357 @@
+section.trade {
+    .trade__top {
+        background-color: #0D0D2B;
+        padding-top: 100px;
+        padding-bottom: 220px;
+        text-align: center;
+
+
+        h2 {
+            width: 741px;
+            height: 60px;
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 150%;
+            text-align: center;
+            color: #FFFFFF;
+            margin: auto;
+        }
+
+        p {
+            width: 622px;
+            height: 54px;
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            text-align: center;
+            color: #E0E0E0;
+            margin: auto;
+            margin-top: 24px;
+        }
+    }
+
+    .trade__hero {
+        padding-top: 0px;
+        padding-bottom: 100px;
+        position: relative;
+        background: linear-gradient(180deg, #F8F9FB 0%, #FAFBFF 100%);
+        ;
+
+        .trade__card {
+            position: relative;
+            top: -153px;
+            width: 942px;
+            height: 371px;
+            background: #FFFFFF;
+            filter: drop-shadow(0px 20px 200px rgba(57, 23, 119, 0.05));
+            border-radius: 16px;
+            margin: auto;
+
+            .trade__card__form {
+                padding: 45px;
+                @include flexContent;
+
+                width: 942px;
+                height: 155px;
+                background: #FBFCFE;
+                border-radius: 16px 16px 0px 0px;
+
+                input {
+                    width: 403px;
+                    padding: 8px auto;
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: #0D0D2B;
+                    background-color: #FBFCFE;
+                    mix-blend-mode: normal;
+                    border: none;
+                    border-bottom: 1px solid #E0E0E0;
+
+                }
+
+                input::placeholder {
+                    color: #0D0D2B;
+                }
+
+                input:focus {
+                    outline: none;
+                    border-bottom-color: #3671E9;
+                }
+
+
+                select {
+                    width: 200px;
+                    padding: 8px auto;
+
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color: #0D0D2B;
+                    background-color: #FBFCFE;
+                    mix-blend-mode: normal;
+                    border: none;
+                    border-bottom: 1px solid #E0E0E0;
+
+                }
+
+                select:focus {
+                    outline: none;
+                    border-bottom-color: #3671E9;
+                }
+
+                .btn {
+                    @include bttn;
+                   
+                }
+
+                .btn:hover {
+                    cursor: pointer;
+                    transform: scale(1.05);
+                    transition: 0.5s;
+                    box-shadow: 0px 5px 10px #010102;
+                    
+                }
+
+                .btn:active {
+                    transform: scale(0.95);
+                }
+
+            }
+
+            h4 {
+                margin-top: 45px;
+                margin-left: 45px;
+                width: 260px;
+                height: 24px;
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: #3671E9;
+            }
+
+            h2 {
+                margin-top: 16px;
+                margin-left: 45px;
+                width: 624px;
+                height: 48px;
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 150%;
+                letter-spacing: 0.04em;
+                color: #0D0D2B;
+
+                span {
+                    color: $primarColor;
+                }
+            }
+
+            p {
+                margin-top: 4px;
+                margin-left: 45px;
+                width: 516px;
+                height: 28px;
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                letter-spacing: 0.01em;
+                color: #828282;
+
+            }
+        }
+
+        h2.trade__hero__title {
+            margin: 0 auto;
+            width: 741px;
+            height: 120px;
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 150%;
+            text-align: center;
+            color: #0D0D2B;
+        }
+
+        .trade__hero__cards {
+            @include flexContent;
+            margin-top: 64px;
+
+            .trade__hero__card {
+                background-color: #fff;
+                width: 370px;
+                height: 433px;
+                text-align: center;
+                border-radius: 16px;
+
+                .card__img {
+                    width: 80px;
+                    margin-top: 48px;
+                }
+
+                .card__title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 48px;
+
+                    h2 {
+                        height: 48px;
+                        font-family: 'Rubik';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 150%;
+                        text-align: center;
+                        align-items: center;
+                        margin-right: 8px;
+                    }
+                    span {
+                        width: 36px;
+                        height: 27px;
+                        font-family: 'Rubik';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 150%;
+                        text-align: center;
+                        color: #BDBDBD;
+                        opacity: 0.7;
+                        padding-top: 5px;
+                    }
+                }
+
+                .card__subtitle {
+                    width: 322px;
+                    height: 56px;
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    text-align: center;
+                    letter-spacing: 0.01em;
+                    margin: 0 auto;
+                    margin-top: 16px;
+
+                }
+
+                .btn {
+                    @include flexContent;
+                    @include bttn;
+                    width: 123px;
+                    margin: 25px auto;
+                    padding: 16px;
+                    background-color: #fff;
+                    justify-content: right;
+                    
+
+
+                    p {
+                        width: 109px;
+                        height: 27px;
+                        font-family: 'Rubik';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 150%;
+                        text-align: center;
+                        margin-right: 24px;
+                        margin-left: 8px;
+
+                        display: none;
+
+                        animation-name: btn_p;
+                        animation-delay: 0s;
+                        animation-direction: alternate;
+                        animation-duration: 1s;
+                        animation-fill-mode: both;
+
+
+                    }
+
+                    img {
+                        border: 2px solid #2B076E33;
+                        border-radius: 50%;
+                        width: 64px;
+                        
+                    }
+
+                }
+                .btn:hover{
+                    margin-top: 0.007px;
+                    box-shadow: 0 20px 20px #0a0a0a;
+                }
+                .btn:active{
+                    transform: scale(0.95);
+                    transition: 0.1s;
+                }
+                
+
+                @keyframes btn_p {
+                    0% {
+                        font-size: 0;
+                    }
+
+                    100% {
+                        font-size: 18px;
+                    }
+                }
+
+
+            }
+
+            .trade__hero__card:hover {
+                background: #2B076E;
+                backdrop-filter: blur(125px);
+                color: #fff;
+                transform: scale(1.05);
+                transition: 1.5s;
+
+                .card__img{
+                    transform: rotate(360deg);
+                    transition-timing-function: round($number: 0);
+                    transition: 1.5s;
+                }
+
+                .btn {
+                    background: #3671E9;
+                    transition: 0.9s;
+                    width: 205px;
+
+                    img {
+                        width: 32px;
+                        transition: 1s;
+                    }
+
+                    p {
+                        display: inline;
+                        transition: 1s;
+                    }
+                }
+
+                
+            }
+
+
+
+
+        }
+    }
+}

@@ -1,0 +1,125 @@
+section.choose {
+    background-color: #0D0D2B;
+    padding: 100px 0;
+
+    .container{
+        position: relative;
+    }
+
+    .choose__top {
+        @include flexContent;
+        z-index: 4;
+
+        .choose__card {
+            display: flex;
+            align-items: center;
+
+            .title {
+                margin-left: 24px;
+
+                h2 {
+                    width: 73px;
+                    height: 60px;
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 150%;
+                    color: #FFFFFF;
+                }
+
+                p {
+                    width: 230px;
+                    height: 28px;
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    letter-spacing: 0.01em;
+                    color: #E0E0E0;
+                }
+            }
+        }
+
+        .choose__card:hover img {
+            transform: rotateY(360deg) rotatex(360deg) rotate(360deg);
+            transition: 3S;
+        }
+
+    }
+
+    .choose__hero {
+        @include flexContent;
+        margin-top: 120px;
+
+
+
+        .choose__hero__right {
+
+            // margin-top: 150px;
+            h2 {
+                width: 480px;
+                height: 119.95px;
+
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 150%;
+                color: #FFFFFF;
+            }
+
+            p {
+                width: 408px;
+                height: 83.96px;
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                letter-spacing: 0.01em;
+                color: #E0E0E0;
+                margin-top: 24px;
+            }
+
+            .btn {
+                @include bttn;
+                margin-top: 32px;
+            }
+
+            .btn:hover {
+                margin-left: 20px;
+                transition: 1s;
+                box-shadow: -10px 5px 20px black;
+                transform: scale(1.05);
+            }
+
+            .btn:active {
+                transform: scale(0.95);
+                transition: 0.3s;
+            }
+
+        }
+    }
+
+}
+
+.choosebg1 {
+    position: absolute;
+    top: 64px;
+    left: 1088px;
+
+}
+
+.choosebg2 {
+    position: absolute;
+    left: 1121px;
+    top: 600px;
+}
+
+.choosebg3 {
+    position: absolute;
+    left: -76.67px;
+    top: 325.8px;
+}

@@ -1,0 +1,22 @@
+@mixin flexContent($display: flex, $flexRow: space-between, $flexColumn: center) {
+    display: $display;
+    justify-content: $flexRow;
+    align-items: $flexColumn;
+}
+
+@mixin bttn {
+    padding: 14px 32px;
+    background-color: $primarColor;
+    border-radius: 32px;
+    border: none;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

@@ -1,0 +1,123 @@
+section.mining {
+    position: relative;
+    padding: 88px 0;
+    background: linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
+    border: none;
+    z-index: 2;
+
+
+    .container {
+        position: relative;
+        padding: 48px;
+        background: #3671E9;
+        border-radius: 16px;
+        background-image: url(../imgs/icons/mining__bg.svg);
+        background-size: cover;
+        background-position: center;
+
+        @include flexContent;
+
+        .mining__left {
+            z-index: 2;
+
+            h2 {
+                width: 501px;
+                height: 48px;
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 150%;
+                color: #FFFFFF;
+                mix-blend-mode: normal;
+            }
+
+            p {
+                width: 348px;
+                height: 56px;
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                letter-spacing: 0.01em;
+                color: #FFFFFF;
+                mix-blend-mode: normal;
+                margin-top: 16px;
+            }
+        }
+
+        .mining__right {
+            z-index: 3;
+        }
+
+        input {
+            z-index: 4;
+            width: 374px;
+            padding: 7px 0;
+
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            background-color: #3671E9;
+            border: none;
+            border-bottom: 1px solid #FFFFFF66;
+
+        }
+
+        .btn {
+            z-index: 2;
+            @include bttn;
+            background-color: #fff;
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 150%;
+            text-align: center;
+            color: #0D0D2B;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+
+            margin-left: 40px;
+
+        }
+
+        input::placeholder {
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
+        }
+
+        input:focus {
+            outline: none;
+            border-bottom-color: #7a51c0;
+        }
+    }
+
+    .minbg1 {
+        position: absolute;
+        left: -127px;
+        top: -82.58px;
+        z-index: 1;
+    }
+
+
+    .minbg2 {
+        position: absolute;
+        left: 325px;
+        top: -89.58px;
+        z-index: 1;
+    }
+
+}

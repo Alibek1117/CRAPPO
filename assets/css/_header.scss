@@ -1,0 +1,286 @@
+header {
+    background-color: #0D0D2B;
+    padding-bottom: 140px;
+
+    .header__top {
+        padding: 20px 0;
+        position: fixed;
+        width: 100%;
+        background-color: #0d0d2b98;
+        z-index: 999;
+
+        .container {
+            @include flexContent;
+
+            .header__top__left {
+                @include flexContent;
+
+                h2 {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 22px;
+                    letter-spacing: 0.04em;
+                    color: #FFFFFF;
+                    margin-left: 16px;
+                }
+            }
+
+            .header__top__left:hover img {
+                transform: rotate(360deg);
+                transition: 2s;
+            }
+
+            .header__top__right {
+                @include flexContent;
+
+                nav {
+                    margin-right: 56px;
+
+                    ul {
+                        @include flexContent;
+
+                        li {
+                            a {
+                                font-family: 'Rubik';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 28px;
+                                letter-spacing: 0.01em;
+                                color: #FFFFFF;
+                                margin: 0 16px;
+                                position: relative;
+
+                            }
+
+                            a::before {
+                                content: "";
+                                width: 0%;
+                                height: 3px;
+                                border-radius: 5px;
+                                background: $primarColor;
+                                position: absolute;
+                                left: 50%;
+                                bottom: -6px;
+                                z-index: 1;
+                                transform: translateX(-50%);
+                                transition: 0.5s
+                            }
+                            a:hover{
+                                color: $primarColor;
+                                transform: scale(1.05);
+                                transition: 1s;
+                            }
+
+                            a:hover::before{
+                                width: 100%;
+
+                            }
+                        }
+
+                    }
+
+                }
+            }
+
+            .login {
+                a {
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 150%;
+                    text-align: center;
+                    padding-right: 24px;
+                    border-right: 1px solid #F2F2F2;
+
+                }
+                a:hover{
+                    color: $primarColor;
+                    text-shadow: 5px 15px 10px  black
+                }
+
+
+
+                .btn {
+                    @include bttn;
+                    margin-left: 24px;
+                }
+                .btn:hover{
+                    cursor: pointer;
+                    transform: scale(1.05);
+                    transition: 0.5s;
+                }
+
+
+            }
+        }
+    }
+
+    .header__hero {
+        padding-top: 200px;
+        position: relative;
+        .container {
+            @include flexContent;
+            position: relative;
+
+            .header__hero__left {
+                z-index: 3;
+                .friday {
+                    @include flexContent(flex, start);
+                    width: 132px;
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 32px;
+
+                    p {
+                        font-family: 'Rubik';
+                        font-style: normal;
+                        font-weight: 100;
+                        font-size: 0px;
+                        line-height: 28px;
+                        letter-spacing: 0.01em;
+                        color: #FFFFFF;
+                        display: none;
+                        margin-left: 16px;
+
+                        animation-name: friday;
+                        animation-delay: 1s;
+                        animation-direction: alternate;
+                        animation-duration: 1s;
+                        animation-fill-mode: both;
+                        
+                    }
+
+
+
+                    
+
+                    .save {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 4px 16px;
+                        gap: 10px;
+                        width: 132px;
+                        height: 32px;
+                        background: #FFFFFF;
+                        border-radius: 32px;
+
+                        font-family: 'Rubik';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 150%;
+                        letter-spacing: 0.04em;
+                        text-transform: uppercase;
+                        color: #0D0D2B;
+                    }
+                }
+
+                .friday:hover {
+                    width: 375px;
+                    transition: 2s;
+
+                    p {
+                        display: inline;
+                       
+                    }
+
+                }
+
+                h1 {
+                    width: 588px;
+                    height: 228px;
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 64px;
+                    line-height: 76px;
+                    color: #FFFFFF;
+                    margin-top: 24px;
+                }
+
+                .hero__subtitle {
+                    width: 435px;
+                    height: 56px;
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    letter-spacing: 0.01em;
+                    color: #E0E0E0;
+                    margin-top: 24px;
+                }
+
+                .hero__button {
+                    margin-top: 32px;
+                    justify-content: center;
+                    width: 210px;
+                    padding: 15px;
+                    display: inline;
+                    background: $primarColor;
+                    border-radius: 32px;
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        font-family: 'Rubik';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 150%;
+                        text-align: center;
+                        color: #FFFFFF;
+                        margin: 0 18px;
+                    }
+
+                   
+                }
+
+                .hero__button:hover {
+                    cursor: pointer;
+                    margin-left: 20px;
+                    transition: 1s;
+                    box-shadow: -10px 5px 20px black;
+                    
+                }
+                .hero__button:active{
+                    transform: scale(0.95);
+                    transition: 0.3s;
+                }
+
+            }
+
+            .header__hero__right {
+                img {
+                    width: 570px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes friday {
+    0%{
+        font-size: 0px;
+    }
+
+    100%{
+        font-size: 15px;
+    }
+}
+
+.herobg2{
+    position: absolute;
+    top: 224px;
+    left: 80px;
+    z-index: 1;
+}
+.herobg1{
+    position: absolute;
+    top: 304px;
+    left: 437px;
+}

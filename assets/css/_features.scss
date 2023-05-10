@@ -1,0 +1,455 @@
+section.features {
+    background-color: #2B076E;
+    padding: 100px 0;
+
+    .container {
+        h2 {
+            margin: 0px auto;
+            width: 758px;
+            height: 120px;
+            font-family: 'Rubik';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 150%;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .features__invest {
+            position: relative;
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+
+            .features__invest__left {
+                h2 {
+                    text-align: left;
+                    width: 454px;
+                    height: 48px;
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 150%;
+                    color: #FFFFFF;
+                }
+
+                p {
+                    text-align: left;
+                    width: 408px;
+                    height: 56px;
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    letter-spacing: 0.01em;
+                    color: #E0E0E0;
+                    margin-top: 24px
+                }
+
+                .btn {
+                    @include bttn;
+                    margin-top: 32px;
+
+                }
+            }
+
+            .features__invest__right {
+                margin-left: 146px;
+                padding: 40px;
+                width: 580px;
+                height: 298px;
+                background: #35068C;
+                border-radius: 16px;
+                position: relative;
+
+                .right__top {
+                    @include flexContent;
+
+                    .bitcoin {
+                        display: flex;
+                        align-items: center;
+                        img{
+                            margin-top: 0;
+                        }
+
+                        .title {
+                            margin-left: 16px;
+
+                            h2 {
+                                width: 122px;
+                                height: 29px;
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 24px;
+                                line-height: 29px;
+                                color: #FFFFFF;
+
+                                span {
+                                    font-family: 'Inter';
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    color: #CFCFCF;
+                                    opacity: 0.7;
+                                }
+                            }
+
+                            .btc__subtitle {
+                                width: 89px;
+                                height: 17px;
+
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 17px;
+                                letter-spacing: 0.01em;
+                                color: #F2F2F2;
+
+                            }
+                        }
+                    }
+
+                    h5 {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 17px;
+                        text-align: right;
+                        letter-spacing: 0.01em;
+                        color: #42FFFF;
+                    }
+                }
+
+                .btc__card1 {
+                    padding: 24px 16px;
+                    width: 178px;
+                    height: 184px;
+                    background: #491F98;
+                    backdrop-filter: blur(125px);
+                    border-radius: 16px;
+                    position: absolute;
+                    top: 243px;
+                    left: 66px;
+
+                    h3 {
+                        width: 146px;
+                        height: 56px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 28px;
+                        letter-spacing: 0.01em;
+                        color: #FFFFFF;
+
+                    }
+
+                    .percent {
+                        display: flex;
+                        align-items: center;
+                        margin: 16px 0;
+
+                        h4 {
+                            width: 67px;
+                            height: 29px;
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 29px;
+                            letter-spacing: 0.01em;
+                            color: #FFFFFF;
+                            margin-right: 13px;
+                        }
+                    }
+
+                    h6 {
+                        width: 82px;
+                        height: 19px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        letter-spacing: 0.01em;
+                        color: #F2F2F2;
+                    }
+                }
+
+                img {
+                    margin-top: 24px;
+                }
+
+                .btc__card2 {
+                    width: 169px;
+                    height: 84px;
+                    background: #491F98;
+                    border-radius: 16px;
+                    padding: 16px 32px;
+                    position: absolute;
+                    top: 254px;
+                    left: 358px;
+                    ;
+
+                    h3 {
+                        width: 82px;
+                        height: 29px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 29px;
+                        text-align: center;
+                        letter-spacing: 0.01em;
+                        color: #FFFFFF;
+
+                    }
+
+                    h6 {
+                        width: 105px;
+                        height: 19px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        text-align: center;
+                        letter-spacing: 0.01em;
+                        color: #F2F2F2;
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    .statistics {
+        margin-top: 249px;
+
+        .container__bigger {
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 5px;
+
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 91px;
+            }
+
+            h2 {
+                width: 454px;
+                height: 48px;
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 150%;
+                color: #FFFFFF;
+            }
+
+            p {
+                width: 408px;
+                height: 84px;
+                font-family: 'Rubik';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                letter-spacing: 0.01em;
+                color: #E0E0E0;
+                margin-top: 24px;
+            }
+
+            .btn {
+                @include bttn;
+                margin-top: 32px;
+            }
+
+
+        }
+    }
+
+    .profit {
+        margin-top: 120px;
+
+        .container {
+            @include flexContent;
+
+            .profit__left {
+                text-align: left;
+
+                h2.coin__title {
+                    text-align: left;
+                    width: 454px;
+                    height: 96px;
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 150%;
+                    color: #FFFFFF;
+                }
+
+                p {
+                    width: 408px;
+                    height: 84px;
+                    font-family: 'Rubik';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    letter-spacing: 0.01em;
+                    color: #E0E0E0;
+                    text-align: left;
+                    margin-top: 24px;
+
+                }
+
+                .btn {
+                    @include bttn;
+                    margin-top: 32px;
+                }
+            }
+
+            .profit__right {
+                width: 610px;
+                height: 334px;
+                background: #35068C;
+                backdrop-filter: blur(2px);
+                border-radius: 16px;
+
+
+
+
+
+
+                .first__ul {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-right: 35px;
+                    margin-top: 40px;
+
+                    .lili {
+                        margin-left: 81px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #FFFFFF;
+                    }
+
+                }
+
+                .main__ul {
+                    @include flexContent;
+                    position: relative;
+                    transition: 2s;
+
+                    width: 610px;
+                    height: 79px;
+                    border-radius: 16px;
+                    background-color: #35068C;
+                    padding: 16px 50px 16px 40px;
+                    margin: 7px 0;
+
+                    .lili {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #F2F2F2;
+
+                        .coin {
+                            display: flex;
+                            align-items: center;
+                            gap: 16px;
+
+                            h5 {
+                                width: 41px;
+                                height: 24px;
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 20px;
+                                line-height: 24px;
+                                color: #FFFFFF;
+                            }
+
+                            h6 {
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 19px;
+                                letter-spacing: 0.01em;
+                                color: #F2F2F2;
+                                margin-top: 4px;
+
+                            }
+                        }
+                    }
+
+                    .arrov__li {
+                        display: flex;
+                        align-items: center;
+
+                        p {
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #8FFFBE;
+                            margin-left: 12px;
+
+                        }
+
+                        p.down {
+                            color: #FF7676;
+                        }
+                    }
+                }
+
+                .main__ul:hover{
+                    background-color: #4610AD;
+                    right: 72px;
+                    top: -10px;
+                    transition: 1s;
+                    box-shadow:  53px 10px 80px #333;
+                    img.rotate__icon{
+                        transform: rotate(11111111deg);
+                        transition: 24341s;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+
+.investbg1{
+    position: absolute;
+    top: -320px;
+    left: 21px;
+
+}
+.investbg2{
+    position: absolute;
+    top: 1212px;
+    left: 936px;
+}
