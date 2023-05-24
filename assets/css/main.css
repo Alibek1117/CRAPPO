@@ -131,6 +131,7 @@ header .header__top .container .login a {
   text-align: center;
   padding-right: 24px;
   border-right: 1px solid #F2F2F2;
+  transition: 0.5s;
 }
 header .header__top .container .login a:hover {
   color: #3671E9;
@@ -152,11 +153,11 @@ header .header__top .container .login .btn {
   order: 0;
   flex-grow: 0;
   margin-left: 24px;
+  transition: 0.5s;
 }
 header .header__top .container .login .btn:hover {
   cursor: pointer;
   transform: scale(1.05);
-  transition: 0.5s;
 }
 header .header__hero {
   padding-top: 200px;
@@ -178,6 +179,7 @@ header .header__hero .container .header__hero__left .friday {
   width: 132px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 32px;
+  transition: 2s;
 }
 header .header__hero .container .header__hero__left .friday p {
   font-family: "Rubik";
@@ -216,7 +218,6 @@ header .header__hero .container .header__hero__left .friday .save {
 }
 header .header__hero .container .header__hero__left .friday:hover {
   width: 375px;
-  transition: 2s;
 }
 header .header__hero .container .header__hero__left .friday:hover p {
   display: inline;
@@ -254,6 +255,7 @@ header .header__hero .container .header__hero__left .hero__button {
   border-radius: 32px;
   display: flex;
   align-items: center;
+  transition: 1s;
 }
 header .header__hero .container .header__hero__left .hero__button p {
   font-family: "Rubik";
@@ -268,7 +270,6 @@ header .header__hero .container .header__hero__left .hero__button p {
 header .header__hero .container .header__hero__left .hero__button:hover {
   cursor: pointer;
   margin-left: 20px;
-  transition: 1s;
   box-shadow: -10px 5px 20px black;
 }
 header .header__hero .container .header__hero__left .hero__button:active {
@@ -389,10 +390,10 @@ section.choose .choose__hero .choose__hero__right .btn {
   order: 0;
   flex-grow: 0;
   margin-top: 32px;
+  transition: 1s;
 }
 section.choose .choose__hero .choose__hero__right .btn:hover {
   margin-left: 20px;
-  transition: 1s;
   box-shadow: -10px 5px 20px black;
   transform: scale(1.05);
 }
@@ -1069,6 +1070,7 @@ section.features .profit .container .profit__left .btn {
   order: 0;
   flex-grow: 0;
   margin-top: 32px;
+  transition: 0.5s;
 }
 section.features .profit .container .profit__right {
   width: 610px;
@@ -1159,7 +1161,7 @@ section.features .profit .container .profit__right .main__ul:hover {
   background-color: #4610AD;
   right: 72px;
   top: -10px;
-  transition: 1s;
+  transform: skew(0deg, 1deg);
   box-shadow: 53px 10px 80px #333;
 }
 section.features .profit .container .profit__right .main__ul:hover img.rotate__icon {
@@ -1319,6 +1321,7 @@ footer .footer__top {
 footer .footer__top .logo a {
   display: flex;
   align-items: center;
+  transition: 1.5s;
 }
 footer .footer__top .logo a h2 {
   margin-left: 16px;

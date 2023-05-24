@@ -74,6 +74,7 @@ section.features {
                         align-items: center;
                         img{
                             margin-top: 0;
+                            
                         }
 
                         .title {
@@ -186,6 +187,7 @@ section.features {
 
                 img {
                     margin-top: 24px;
+                    
                 }
 
                 .btc__card2 {
@@ -319,6 +321,7 @@ section.features {
                 .btn {
                     @include bttn;
                     margin-top: 32px;
+                    transition: 0.5s;
                 }
             }
 
@@ -427,7 +430,8 @@ section.features {
                     background-color: #4610AD;
                     right: 72px;
                     top: -10px;
-                    transition: 1s;
+                    transform: skew(0deg, 1deg);
+                    // transition: 1.5s;
                     box-shadow:  53px 10px 80px #333;
                     img.rotate__icon{
                         transform: rotate(11111111deg);
@@ -452,4 +456,5 @@ section.features {
     position: absolute;
     top: 1212px;
     left: 936px;
+   
 }

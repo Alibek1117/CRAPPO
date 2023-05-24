@@ -95,6 +95,7 @@ header {
                     text-align: center;
                     padding-right: 24px;
                     border-right: 1px solid #F2F2F2;
+                    transition: 0.5s;
 
                 }
                 a:hover{
@@ -107,11 +108,12 @@ header {
                 .btn {
                     @include bttn;
                     margin-left: 24px;
+                    transition: 0.5s;
                 }
                 .btn:hover{
                     cursor: pointer;
                     transform: scale(1.05);
-                    transition: 0.5s;
+                   
                 }
 
 
@@ -133,6 +135,7 @@ header {
                     width: 132px;
                     background: rgba(255, 255, 255, 0.1);
                     border-radius: 32px;
+                    transition: 2s;
 
                     p {
                         font-family: 'Rubik';
@@ -181,7 +184,7 @@ header {
 
                 .friday:hover {
                     width: 375px;
-                    transition: 2s;
+                    // transition: 2s;
 
                     p {
                         display: inline;
@@ -225,6 +228,7 @@ header {
                     border-radius: 32px;
                     display: flex;
                     align-items: center;
+                    transition: 1s;
 
                     p {
                         font-family: 'Rubik';
@@ -243,7 +247,7 @@ header {
                 .hero__button:hover {
                     cursor: pointer;
                     margin-left: 20px;
-                    transition: 1s;
+                   
                     box-shadow: -10px 5px 20px black;
                     
                 }
